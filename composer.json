@@ -52,8 +52,5 @@
       "@fix-tests",
       "@tests"
     ]
-  },
-  "bin": [
-    "bin/child"
-  ]
+  }
 }
