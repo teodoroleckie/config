@@ -20,11 +20,7 @@ class Config implements ConfigInterface
      */
     public function __construct(array $data = [])
     {
-        array_walk($data, static function (&$item) {
-            $item = is_array($item) ? new Config($item) : $item;
-        });
-
-        $this->data = $data;
+        $this->data = $this->check($data);
     }
 
     /**
@@ -161,11 +157,27 @@ class Config implements ConfigInterface
      */
     public function merge(array|ConfigInterface $config): ConfigInterface
     {
-        $this->data = array_merge(
-            $this->data,
-            ($config instanceof ConfigInterface) ? $config->toArray() : $config
-        );
+        $data = $config;
+        if($config instanceof ConfigInterface){
+            $data = $config->toArray();
+        }
+
+        $data = $this->check($data);
+        $this->data = array_merge($this->data, $data);
 
         return $this;
+    }
+
+    /**
+     * @param array $data
+     * @return array
+     */
+    private function check(array $data): array
+    {
+        array_walk($data, static function (&$item) {
+            $item = is_array($item) ? new Config($item) : $item;
+        });
+
+        return $data;
     }
 }
