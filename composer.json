@@ -34,7 +34,6 @@
   },
   "require-dev": {
     "infection/infection": "^0.21.5",
-    "mikey179/vfsstream": "^1.6",
     "phpunit/phpunit": "^9.5",
     "friendsofphp/php-cs-fixer": "v3.0.0-beta.2"
   },
