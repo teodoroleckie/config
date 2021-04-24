@@ -158,7 +158,7 @@ class Config implements ConfigInterface
     public function merge(array|ConfigInterface $config): ConfigInterface
     {
         $data = $config;
-        if($config instanceof ConfigInterface){
+        if ($config instanceof ConfigInterface) {
             $data = $config->toArray();
         }
 

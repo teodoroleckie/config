@@ -47,9 +47,11 @@
     "fix-src": "./bin/php-cs-fixer fix src/ ",
     "fix-tests": "./bin/php-cs-fixer fix tests/",
     "tests": "./bin/phpunit ./tests/",
+    "infection": "./bin/infection",
     "check": [
       "@fix-src",
       "@fix-tests",
+      "infection",
       "@tests"
     ]
   }
