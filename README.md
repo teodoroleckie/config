@@ -3,7 +3,8 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tleckie/config.svg?style=flat-square)](https://packagist.org/packages/tleckie/config)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/teodoroleckie/config/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/config/?branch=main)
 [![Total Downloads](https://img.shields.io/packagist/dt/tleckie/config.svg?style=flat-square)](https://packagist.org/packages/tleckie/config)
-
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/teodoroleckie/config/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
+[![Build Status](https://scrutinizer-ci.com/g/teodoroleckie/config/badges/build.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/config/build-status/main)
 
 ## Installation
 
